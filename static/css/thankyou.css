@@ -35,12 +35,13 @@ a {
     color: white;
 }
 
-@media  (max-width: 768px){
-h1{
-    font-size: 24px;
-}
-a {
-    font-size: 12px;
-}
+@media (max-width: 768px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    a {
+        font-size: 12px;
+    }
 
 }
