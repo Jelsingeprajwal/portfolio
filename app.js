@@ -9,7 +9,7 @@ app.use(express.static("static"));
 //set view engine
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "/static"));
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 8000;
 
 //routes
 app.get("/", (request, response) => {

@@ -12,7 +12,7 @@
     "nodemon": "^2.0.12"
   },
   "scripts": {
-    "start": "npm app.js"
+    "start": "node app.js"
   },
   "author": "",
   "license": "ISC"
