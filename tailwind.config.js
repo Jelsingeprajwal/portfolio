@@ -14,6 +14,14 @@ export default {
         GeneralSans: ["General Sans"],
         Hind: ["Hind"],
       },
+      backgroundColor: {
+        primaryDark: "#291C1C",
+      },
+      fontSize: {
+        small: "14px",
+        normal: "16px",
+        medium: "20px",
+      },
     },
   },
   plugins: [],
