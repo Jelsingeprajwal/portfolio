@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: 'General Sans';
+    src: url('./fonts/GeneralSans-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Hind';
+    src: url('./fonts/Hind-Regular.ttf');
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
