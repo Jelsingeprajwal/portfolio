@@ -30,7 +30,7 @@ const AboutMe = () => {
             textShadow:
               "1px 0 0 #D9D9D9,0 1px 0 #D9D9D9,-1px 0 0 #D9D9D9,0 -1px 0 #D9D9D9 ",
           }}
-          className={`${styles.waterMark} h-full`}
+          className={`${styles.waterMark}  text-center md:absolute md:right-0`}
         >
           ABOUT ME
         </motion.h1>
