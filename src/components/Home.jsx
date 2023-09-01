@@ -1,78 +1,91 @@
 import React from "react";
-import { easeIn, motion } from "framer-motion";
-import { HandShake, Instagram, Github, Linkedin } from "../assets/index";
+import { Instagram, Github, Linkedin } from "../assets/index";
 import { styles } from "../styles";
 import { Button } from "./index";
+
 const Home = () => {
   return (
-    <section className="w-[100%] h-[100vh] md:h-fit px-[30px] py-[64px] md:px-[72px] lg:px-[180px] ">
+    <section className="w-[100%]  md:h-fit lg:h-[100vh] px-[30px] py-[64px] md:px-[72px] lg:px-[180px] ">
       {/* // =============================Gradient Background========================================= */}
 
       {/* <div
         className="pointer-events-none w-[200px] h-[200px]    rounded-full top-0 
-       absolute left-[50%] -translate-x-[50%] -translate-y-[50%] bg-green-500 blur-[120px] z-0"
+       absolute left-[50%] -translate-x-[50%] -translate-y-[50%] bg-green-500 blur-[100px] z-0"
       ></div>
       <div
         className="pointer-events-none w-[400px] h-[400px]  rounded-full top-0 
-       absolute left-[50%] -translate-x-[50%] -translate-y-[50%] bg-primaryBlue blur-[300px] z-0"
+       absolute left-[50%] -translate-x-[50%] -translate-y-[50%] bg-primaryBlue blur-[200px] z-0"
       ></div> */}
 
       {/* =================================Main title=============================================== */}
 
-      <div className="text-center z-10 flex flex-col gap-4 mt-40 items-center justify-between">
-        <h1 className={`${styles.headingText}`}>
+      <div className="text-center z-10 flex flex-col gap-4 mt-32 items-center justify-between">
+        <h1 className={`${styles.headingText} `}>
           Hi 👋 I am{" "}
           <span className={`text-primaryBlue font-[900]`}>
             Jelsinge Prajwal{" "}
           </span>
         </h1>
+
         <p className={`${styles.regularText}`}>
           Dedicated Computer Science Engineer who loves building stuff
         </p>
         <div>
           <Button
             classes={
-              "bg-primaryBlue text-white text-small md:px-[34px]   w-[7.5rem] md:w-[180px] text-sm "
+              "bg-primaryBlue text-white text-small md:px-[34px]   w-[7.5rem] md:w-[180px] text-sm hover:scale-110  transition-all ease-in-out "
             }
             text={"View Resume"}
           />
           <Button
             classes={
-              "ml-10 bg-dimWhite text-black text-small  md:px-[34px]  w-[7.5rem] md:w-[180px] text-sm "
+              "ml-10 bg-dimWhite text-black text-small  md:px-[34px]  w-[7.5rem] md:w-[180px] text-sm hover:scale-110  transition-all ease-in-out"
             }
             text={"Contact Me"}
           />
         </div>
       </div>
       {/* ====================== Social Media Handle Button============================ */}
-      <div className={`mt-[100px] lg:mt-10 relative`}>
-        <div className={`md:ml-[150px]`}>
-          <h1 className={`text-xs text-primaryBlue font-bold`}>Lets Connect</h1>
-          <motion.svg
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.2, ease: easeIn }}
-            width="89"
-            height="89"
-            viewBox="0 0 89 89"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            className={`translate-x-[3.5rem]`}
-          >
-            <motion.path
-              d="M66.5988 58.6866C58.9448 55.2334 51.2759 51.8099 43.6368 48.327C39.5131 46.4461 34.1375 43.8562 32.046 39.5279C33.3454 39.7622 34.6626 39.9135 35.9798 39.9877C39.6169 40.1924 43.3995 39.2816 44.6366 35.4457C45.6482 32.3129 44.3755 28.6669 41.4503 27.0708C38.3383 25.3709 34.2087 25.9969 31.6722 28.4444C29.5955 30.4469 28.6462 33.4047 28.8094 36.2645C27.7176 35.9115 26.7802 35.5496 26.1156 35.244C18.9986 31.9629 13.7624 24.9259 14.5516 16.8536C14.6999 15.3347 12.3266 15.3436 12.1782 16.8536C11.3594 25.2256 16.5837 32.9804 23.8432 36.7629C25.5816 37.6678 27.4121 38.3738 29.2929 38.896C30.358 42.2572 32.9093 44.8471 35.7781 46.7962C39.8335 49.5552 44.5594 51.3293 49.0064 53.3377L65.4002 60.7336C66.7827 61.3566 67.9902 59.3126 66.5988 58.6836V58.6866ZM31.1679 36.045C31.0314 32.8202 32.7313 29.4857 36.0391 28.6699C38.9554 27.949 42.2157 29.4145 42.5777 32.6215C43.2422 38.4984 36.5642 38.2433 31.2598 36.9558C31.2153 36.6591 31.1827 36.3565 31.1708 36.045H31.1679Z"
-              fill="#184BFF"
-            />
-            <path
-              d="M76.5581 61.321C71.6647 56.756 66.9653 51.9873 62.4724 47.0276C61.4429 45.8943 59.7697 47.5764 60.7932 48.7067C64.8498 53.1816 69.0744 57.5012 73.4579 61.6562C67.1211 63.8397 61.1611 66.9755 55.7885 71.0012C54.581 71.9061 55.7618 73.9679 56.987 73.0512C62.7483 68.7347 69.1592 65.4358 76.036 63.3027C76.8577 63.0476 77.2345 61.9499 76.5611 61.318L76.5581 61.321Z"
-              fill="#184BFF"
-            />
-          </motion.svg>
-        </div>
+      <div className="mt-40 md:mt-0">
         <div
-          className={`rounded-full bg-primaryBlue w-12 h-12 mt-10 lg:mt-0 ${styles.flexCenter} absolute left-1/2 -translate-x-1/2`}
+          className={`w-[150px] relative ml-[1.875rem] mt-[3rem] md:ml-[8rem] lg:ml-[16rem] md:mt-[2rem] lg:mt-[3rem]`}
         >
-          <img src={HandShake} alt="" className="w-6" />
+          <h1 className={`text-xs font-bold text-primaryBlue`}>
+            Let's Connect
+          </h1>
+          <svg className="w-[100px] translate-x-[3rem]" viewBox="0 0 300 300">
+            <path
+              fill="#184BFF"
+              d="M224.49 197.82c-25.8-11.64-51.65-23.18-77.4-34.92-13.9-6.34-32.02-15.07-39.07-29.66 4.38.79 8.82 1.3 13.26 1.55 12.26.69 25.01-2.38 29.18-15.31 3.41-10.56-.88-22.85-10.74-28.23-10.49-5.73-24.41-3.62-32.96 4.63-7 6.75-10.2 16.72-9.65 26.36-3.68-1.19-6.84-2.41-9.08-3.44-23.99-11.06-41.64-34.78-38.98-61.99.5-5.12-7.5-5.09-8 0-2.76 28.22 14.85 54.36 39.32 67.11 5.86 3.05 12.03 5.43 18.37 7.19 3.59 11.33 12.19 20.06 21.86 26.63 13.67 9.3 29.6 15.28 44.59 22.05l55.26 24.93c4.66 2.1 8.73-4.79 4.04-6.91zM105.06 121.5c-.46-10.87 5.27-22.11 16.42-24.86 9.83-2.43 20.82 2.51 22.04 13.32 2.24 19.81-20.27 18.95-38.15 14.61-.15-1-.26-2.02-.3-3.07z"
+            ></path>
+            <path
+              fill="#184BFF"
+              d="M258.06 206.7a805.18 805.18 0 01-47.48-48.18c-3.47-3.82-9.11 1.85-5.66 5.66a806.35 806.35 0 0042.69 43.65c-21.36 7.36-41.45 17.93-59.56 31.5-4.07 3.05-.09 10 4.04 6.91 19.42-14.55 41.03-25.67 64.21-32.86 2.77-.86 4.04-4.56 1.77-6.69z"
+            ></path>
+          </svg>
+        </div>
+        <div className={` mx-auto ${styles.flexCenter}  gap-5`}>
+          <a href="/">
+            <img
+              src={Instagram}
+              className="w-6 opacity-80 hover:opacity-100 hover:scale-105 transition-all ease-in-out"
+              alt=""
+            />
+          </a>
+          <a href="/">
+            <img
+              src={Linkedin}
+              className="w-6 opacity-80 hover:opacity-100 hover:scale-105 transition-all ease-in-out"
+              alt=""
+            />
+          </a>
+          <a href="/">
+            <img
+              src={Github}
+              className="w-6 opacity-80 hover:opacity-100 hover:scale-105 transition-all ease-in-out"
+              alt=""
+            />
+          </a>
         </div>
       </div>
     </section>

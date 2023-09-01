@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <header
       className={`fixed top-0 right-0 left-0 px-[30px] py-[26px] 
-      w-full h-[4rem] md:px-[72px] max-w-[1366px] mx-auto ${styles.flexBetweenCenter}  backdrop-blur-[10px] z-50`}
+      w-full h-[4rem] md:px-[72px] max-w-[1366px] mx-auto ${styles.flexBetweenCenter} backdrop-blur-[10px] z-50`}
     >
       <div className="text-medium">J. Prajwal</div>
       <div
