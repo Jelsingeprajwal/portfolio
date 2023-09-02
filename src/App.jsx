@@ -1,5 +1,5 @@
 import Skills from "./components/Skills";
-import { AboutMe, Header, Home, Projects } from "./components/index";
+import { AboutMe, Header, Home, Projects, Contact } from "./components/index";
 function App() {
   return (
     <section className="bg-primaryDark text-white font-Hind  ">
@@ -9,7 +9,7 @@ function App() {
         <AboutMe />
         <Skills />
         <Projects />
-        <div className="h-[100vh] outline"></div>
+        <Contact />
       </div>
     </section>
   );

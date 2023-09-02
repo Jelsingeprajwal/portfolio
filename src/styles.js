@@ -6,5 +6,5 @@ export const styles = {
     "text-[1.5rem] md:text-[3rem] lg:text-[4rem] font-GeneralSans font-bold",
   regularText: "text-sm md:text-base ",
   waterMark:
-    "font-GeneralSans text-[3rem] md:text-[4.2rem] font-bold lg:text-[7.5rem] opacity-40 text-[#291C1C] leading-[10%] ",
+    "font-GeneralSans text-[3rem] md:text-[4.2rem] font-bold lg:text-[7.5rem] opacity-40 text-[#291C1C] leading-[10%] select-none",
 };

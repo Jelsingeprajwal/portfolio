@@ -37,9 +37,9 @@ const AboutMe = () => {
       </div>
       {/* About me */}
       <div
-        className={`mt-16 ${styles.flexVerticalCenter} md:flex-row md:items-start gap-16 `}
+        className={`mt-16 ${styles.flexVerticalCenter} md:flex-row md:items-start md:gap-16  `}
       >
-        <div className="w-[12.5rem] md:w-[30vw] lg:w-[30vw] h-full relative shrink-0 ">
+        <div className="w-[12.5rem] md:w-[30vw] lg:w-[30vw] max-w-[475px] h-full relative shrink-0 ">
           <img
             className="w-[12.5rem] md:w-[30vw] lg:w-[30vw] z-20"
             src={ProfilePic}
@@ -47,7 +47,7 @@ const AboutMe = () => {
           />
         </div>
         <div
-          className={`${styles.regularText} text-center md:text-start  opacity-70 mt-10 `}
+          className={`${styles.regularText} text-center md:text-start  mt-10 `}
         >
           <h1>
             I'm a B.Tech trailblazer, riding the waves of Computer Science at
