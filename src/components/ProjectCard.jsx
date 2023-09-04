@@ -1,44 +1,45 @@
 import React from "react";
-import { NetflixClone } from "../assets/index";
 import { styles } from "../styles";
-const ProjectCard = () => {
+const ProjectCard = ({ img, title, desc, demoLink, sourceCode }) => {
   return (
     <div
       className={` md:w-[655px] lg:w-[80vw] max-w-[1096px] p-6 lg:p-10 rounded-[10px] bg-secondaryBlue mx-auto
-      lg:flex lg:items-start lg:gap-14  hover:scale-110 transition-all ease-in-out cursor-pointer`}
+      lg:flex lg:items-start  lg:gap-14  hover:scale-110 transition-all ease-in-out cursor-pointer`}
     >
-      <div className="w-full  rounded-[5px]">
+      <div className="lg:w-1/2 w-full grow-0 shrink-0  rounded-[5px]">
         <img
-          src={NetflixClone}
+          src={img}
           alt="NetflixClone"
-          className="w-[322px] lg:h-[200px] lg:w-[600px] object-cover md:w-full rounded-[5px] md:hover:scale-110 transition-all ease-in-out"
+          className="w-[322px] lg:h-[200px] lg:w-[600px] min-w-[322px]  object-cover md:w-full rounded-[5px] md:hover:scale-110 transition-all ease-in-out"
         />
       </div>
       <div className="">
         <h1 className="text-medium lg:text-2xl font-bold font-GeneralSans py-4 lg:py-0">
-          Portfolio website
+          {title}
         </h1>
-        <p className="text-small lg:text-base lg:mt-3">
-          A sleek and dynamic portfolio website showcasing my skills and side
-          projects. Developed with ReactJS and styled with TailwindCSS, it
-          offers a visually appealing and informative platform to highlight my
-          expertise and accomplishments.
+        <p className="text-small  lg:text-base lg:mt-3 max-w-[322px] md:max-w-none">
+          {desc}
         </p>
         <div
           className={`${styles.flexBetweenCenter} lg:justify-start lg:gap-6 mt-5 lg:mt-10 `}
         >
-          <a
-            href="/"
-            className="  px-[22px] py-[6px] bg-primaryBlue text-sm text-center rounded-lg"
-          >
-            Live Demo
-          </a>
-          <a
-            href="/"
-            className="  px-[22px] py-[6px] bg-dimWhite text-black text-sm text-center rounded-lg"
-          >
-            Source Code
-          </a>
+          {demoLink && (
+            <a
+              href={demoLink}
+              target="_blank"
+              className="  px-[22px] py-[6px] bg-primaryBlue text-sm text-center rounded-lg"
+            >
+              Live Demo
+            </a>
+          )}
+          {sourceCode && (
+            <a
+              href={sourceCode}
+              className="  px-[22px] py-[6px] bg-dimWhite text-black text-sm text-center rounded-lg"
+            >
+              Source Code
+            </a>
+          )}
         </div>
       </div>
     </div>

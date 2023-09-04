@@ -8,6 +8,10 @@ import ProfilePic from "./profilepic.png";
 import NetflixClone from "./netflix-clone-screenshot.png";
 import Copy from "./copy.svg";
 import Send from "./Vector.svg";
+import Resume from "./jelsinge-prajwal-resume.pdf";
+import AirBnbClone from "./airbnb-clone-screenshot.png";
+import PM from "./pm-screenshot.png";
+import ReactBlog from "./react-blog.jpg";
 
 export {
   Menu,
@@ -20,4 +24,8 @@ export {
   NetflixClone,
   Copy,
   Send,
+  Resume,
+  AirBnbClone,
+  PM,
+  ReactBlog,
 };
