@@ -12,7 +12,9 @@ export default {
       },
       fontFamily: {
         GeneralSans: ["General Sans"],
+        GeneralSansBold: ["GeneralSans-Bold"],
         Hind: ["Hind"],
+        DancingScript: ["Dancing Script", "serif"],
       },
       backgroundColor: {
         primaryDark: "#291C1C",

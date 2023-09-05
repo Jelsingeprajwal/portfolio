@@ -41,7 +41,7 @@ const AboutMe = () => {
       >
         <div className="w-[12.5rem] md:w-[30vw] lg:w-[30vw] max-w-[475px] h-full relative shrink-0 ">
           <img
-            className="w-[12.5rem] md:w-[30vw] lg:w-[30vw] z-20"
+            className="w-[12.5rem] md:w-[30vw] lg:w-[30vw]  z-20"
             src={ProfilePic}
             alt=""
           />

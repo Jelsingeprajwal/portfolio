@@ -57,7 +57,7 @@ const Contact = () => {
               <h1 className={`text-medium md:text-[32px] font-semibold `}>
                 Get in touch
               </h1>
-              <p className="text-small md:text-base mt-4 lg:w-[375px]">
+              <p className={`${styles.regularText} mt-4 lg:w-[375px]`}>
                 Ready to take the next step? Let's connect and weave our stories
                 together. Fill out the contact form and let's embark on an
                 extraordinary journey of collaboration and growth!

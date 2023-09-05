@@ -17,7 +17,9 @@ const ProjectCard = ({ img, title, desc, demoLink, sourceCode }) => {
         <h1 className="text-medium lg:text-2xl font-bold font-GeneralSans py-4 lg:py-0">
           {title}
         </h1>
-        <p className="text-small  lg:text-base lg:mt-3 max-w-[322px] md:max-w-none">
+        <p
+          className={`${styles.regularText}  lg:mt-3 max-w-[322px] md:max-w-none`}
+        >
           {desc}
         </p>
         <div
@@ -27,7 +29,7 @@ const ProjectCard = ({ img, title, desc, demoLink, sourceCode }) => {
             <a
               href={demoLink}
               target="_blank"
-              className="  px-[22px] py-[6px] bg-primaryBlue text-sm text-center rounded-lg"
+              className="  px-[22px] py-[6px] bg-primaryBlue text-sm text-center rounded-lg hover:bg-[#414273be]"
             >
               Live Demo
             </a>
@@ -35,7 +37,7 @@ const ProjectCard = ({ img, title, desc, demoLink, sourceCode }) => {
           {sourceCode && (
             <a
               href={sourceCode}
-              className="  px-[22px] py-[6px] bg-dimWhite text-black text-sm text-center rounded-lg"
+              className="  px-[22px] py-[6px] bg-dimWhite text-black text-sm text-center rounded-lg hover:bg-[#bdbec150] hover:text-white"
             >
               Source Code
             </a>

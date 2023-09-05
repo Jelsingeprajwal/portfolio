@@ -69,7 +69,7 @@ const Header = () => {
         id="mobileNav"
         className={`h-[90vh] left-0 right-0 bg-primaryDark lg:hidden absolute
          top-[10vh] ${styles.flexVerticalCenter} justify-center gap-20 
-         transition-opacity ease-in-out hidden
+         transition-opacity duration-100 ease-in-out hidden
          
          `}
       >
@@ -81,7 +81,7 @@ const Header = () => {
               }
               to="home"
               smooth={true}
-              className={`cursor-pointer block  bg-secondaryBlue hover:text-primaryBlue transition-colors ease-in-out w-[340px] h-16 rounded-[10px] ${styles.flexCenter}`}
+              className={`cursor-pointer block  bg-secondaryBlue  transition-colors ease-in-out w-[340px] h-16 rounded-[10px] ${styles.flexCenter}`}
             >
               Home
             </Link>
@@ -93,7 +93,7 @@ const Header = () => {
               }
               to="skills"
               smooth={true}
-              className={`cursor-pointer block  bg-secondaryBlue hover:text-primaryBlue transition-colors ease-in-out w-[340px] h-16 rounded-[10px] ${styles.flexCenter}`}
+              className={`cursor-pointer block  bg-secondaryBlue  transition-colors ease-in-out w-[340px] h-16 rounded-[10px] ${styles.flexCenter}`}
             >
               Skills
             </Link>
@@ -105,7 +105,7 @@ const Header = () => {
               }
               to="projects"
               smooth={true}
-              className={`cursor-pointer block  bg-secondaryBlue hover:text-primaryBlue transition-colors ease-in-out w-[340px] h-16 rounded-[10px] ${styles.flexCenter}`}
+              className={`cursor-pointer block  bg-secondaryBlue  transition-colors ease-in-out w-[340px] h-16 rounded-[10px] ${styles.flexCenter}`}
             >
               Project
             </Link>

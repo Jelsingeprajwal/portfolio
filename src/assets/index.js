@@ -8,6 +8,7 @@ import ProfilePic from "./profilepic.png";
 import NetflixClone from "./netflix-clone-screenshot.png";
 import Copy from "./copy.svg";
 import Send from "./Vector.svg";
+import Sent from "./sent.svg";
 import Resume from "./jelsinge-prajwal-resume.pdf";
 import AirBnbClone from "./airbnb-clone-screenshot.png";
 import PM from "./pm-screenshot.png";
@@ -28,4 +29,5 @@ export {
   AirBnbClone,
   PM,
   ReactBlog,
+  Sent,
 };

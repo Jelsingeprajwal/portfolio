@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react";
-import { Send } from "../assets/index";
+import { Send, Sent } from "../assets/index";
 import { styles } from "../styles";
 import emailjs from "@emailjs/browser";
 export default function Form() {
@@ -60,14 +60,18 @@ export default function Form() {
       />
       <button
         type="submit"
-        className={`${styles.flexBetweenCenter} gap-3 bg-primaryBlue rounded-lg px-6 py-3 absolute right-0`}
+        className={`${styles.flexBetweenCenter} transition-all ease-in-out gap-3 bg-primaryBlue rounded-lg px-6 py-3 absolute right-0`}
       >
-        Send <img src={Send} alt="" />
+        {sent ? (
+          <>
+            <span>Sent</span> <img src={Sent} alt="" />
+          </>
+        ) : (
+          <>
+            <span>Send</span> <img src={Send} alt="" />
+          </>
+        )}
       </button>
-      {/* <input
-        type="submit"
-        className={`${styles.flexBetweenCenter} gap-3 bg-primaryBlue rounded-lg px-6 py-3 absolute right-0`}
-      /> */}
       {sent && (
         <span
           className={` fixed bottom-10 left-1/2 -translate-x-1/2 w-fit h-fit py-2 px-4 rounded-lg font-semibold font-GeneralSans bg-[#5aff2c] text-black `}

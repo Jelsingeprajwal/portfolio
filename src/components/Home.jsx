@@ -13,11 +13,11 @@ const Home = () => {
         {/* <div
         className="pointer-events-none w-[200px] h-[200px]    rounded-full top-0 
        absolute left-[50%] -translate-x-[50%] -translate-y-[50%] bg-green-500 blur-[100px] z-0"
-      ></div>
-      <div
-        className="pointer-events-none w-[400px] h-[400px]  rounded-full top-0 
-       absolute left-[50%] -translate-x-[50%] -translate-y-[50%] bg-primaryBlue blur-[200px] z-0"
       ></div> */}
+        {/* <div
+          className="pointer-events-none w-[400px] h-[400px]  rounded-full top-0 
+       absolute left-[50%] -translate-x-[50%] -translate-y-[50%] bg-primaryBlue blur-[200px] z-0"
+        ></div> */}
 
         {/* =================================Main title=============================================== */}
 

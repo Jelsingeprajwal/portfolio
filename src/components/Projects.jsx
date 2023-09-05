@@ -72,6 +72,7 @@ const Projects = () => {
               title={"React Blogging website"}
               desc={"Blogging website built using React JS"}
               demoLink={"Blogging website built using React JS"}
+              sourceCode={"https://github.com/Jelsingeprajwal/react-blog"}
             />
           </div>
         </div>
