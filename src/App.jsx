@@ -10,9 +10,9 @@ function App() {
         initial={{ translateY: 0 }}
         animate={{ translateY: "-100vh" }}
         transition={{ delay: 1, duration: 0.7, ease: easeOut }}
-        className={` bg-black fixed top-0 bottom-0 left-0 right-0 ${styles.flexCenter} z-[100] `}
+        className={` bg-black fixed w-[100vw] h-[100vh] ${styles.flexCenter} z-[100] `}
       >
-        <p className="relative text-5xl md:text-6xl lg:text-8xl font-bold font-DancingScript">
+        <p className="relative text-3xl md:text-6xl lg:text-8xl font-bold font-DancingScript">
           Jelsinge Prajwal
         </p>
       </motion.div>

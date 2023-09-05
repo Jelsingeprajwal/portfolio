@@ -7,7 +7,7 @@ import { Element, Link } from "react-scroll";
 const Home = () => {
   return (
     <Element name="home">
-      <section className="w-[100%]  md:h-fit lg:h-[100vh] px-[30px] py-[64px] md:px-[72px] lg:px-[180px] ">
+      <section className="w-[100%] h-[100vh] md:h-fit lg:h-[100vh] px-[30px] py-[64px] md:px-[72px] lg:px-[180px] ">
         {/* // =============================Gradient Background========================================= */}
 
         {/* <div
